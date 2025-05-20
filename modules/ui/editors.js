@@ -357,7 +357,7 @@ function createMfcgLink(burg) {
   const temple = +burg.temple;
   const shantytown = +burg.shanty;
 
-  const url = new URL("https://watabou.github.io/city-generator/");
+  const url = new URL("http://127.0.0.1:3000/city-generator/");
   url.search = new URLSearchParams({
     name,
     population,
@@ -425,7 +425,7 @@ function createVillageGeneratorLink(burg) {
   })();
   const height = rn(width / 2.2);
 
-  const url = new URL("https://watabou.github.io/village-generator/");
+  const url = new URL("http://127.0.0.1:3000/village-generator/");
   url.search = new URLSearchParams({pop, name: "", seed: burgSeed, width, height, tags});
   return url.toString();
 }
